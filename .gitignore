@@ -16,3 +16,7 @@ out/
 # misc
 .DS_Store
 *.pem
+
+# local tools, not part of the site
+linkedin_scraper.js
+linkedin_export_instructions.md

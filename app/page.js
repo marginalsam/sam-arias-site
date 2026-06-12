@@ -186,25 +186,16 @@ function WhenIveFailed() {
 function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      {/* NYC Skyline Image Placeholder */}
-      {/* TODO: Replace with actual NYC skyline image at /assets/nyc-skyline.jpg */}
-      <div
-        className="w-full h-40 md:h-56 bg-gradient-to-b from-gray-800 to-gray-900 flex items-end justify-center pb-6 relative overflow-hidden"
-        aria-label="NYC skyline placeholder"
-        role="img"
-      >
-        {/* Stylized skyline silhouette via CSS */}
-        <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center gap-px opacity-30">
-          {[20, 35, 28, 55, 40, 65, 45, 70, 50, 42, 60, 48, 35, 52, 38, 44, 30, 58, 36, 48].map(
-            (h, i) => (
-              <div
-                key={i}
-                className="bg-gray-400 w-4 md:w-6 flex-shrink-0"
-                style={{ height: `${h * 1.4}px` }}
-              />
-            )
-          )}
-        </div>
+      {/* NYC Skyline — shot on film by Sam */}
+      <div className="w-full h-48 md:h-72 relative overflow-hidden">
+        <Image
+          src="/assets/nyc-skyline.jpg"
+          alt="Manhattan skyline across the East River, shot on black-and-white film"
+          fill
+          sizes="100vw"
+          className="object-cover object-[center_30%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/60" />
       </div>
 
       {/* Footer content */}
