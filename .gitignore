@@ -20,3 +20,4 @@ out/
 # local tools, not part of the site
 linkedin_scraper.js
 linkedin_export_instructions.md
+.vercel
